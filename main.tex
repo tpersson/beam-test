@@ -23,16 +23,15 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-The LHC Run~3 injection optics commissioning started with the beam test in 2021 and was finalized in 2022.
+The LHC Run~3 injection optics commissioning started with the beam test in 2021 and was continued in 2022.
 The beam test aimed at finding potential issues with the machine, testing the new software and hardware and progressing with the general commissioning in view of the full restart in 2022.
 First optics measurements at injection energy revealed a significantly larger $\beta$-beating than in Run~2.
-This document describes the commissioning steps to fully correct and validate the LHC injection optics.
-
+This document describes the commissioning steps to fully correct and validate the LHC injection optics in 2021 and 2022.
 
 \end{abstract}
 
 \section{The Run 3 injection optics}
-The injection optics deployed in Run 3 is almost identical to the injection optics in the second half of Run~2 after deploying the ATS optics~\cite{ats_stephane}.
+The injection optics deployed in Run~3 (2021-2022) is almost identical to the injection optics in the second half of Run~2 after deploying the ATS optics~\cite{ats_stephane}.
 During Long Shutdown 2 (LS2) it was decided to remove one warm quadrupole on either side of IP7, MQWA.E5, to replace them with shielding and keep the magnets as spares~\cite{roderik}. The IR7 optics was rematched to
 keep it as similar as possible to the Run~2 optics. Figure~\ref{fig:IR7} shows the IR7 optics both for Run 2 and Run~3. 
 
@@ -81,12 +80,12 @@ The initial measurement of the $\beta$-beating showed significantly higher value
   \includegraphics[width=.99\linewidth]{plots/beam2/B2_BetaBeat_2016_vs_first2021.pdf}  
   \caption{Beam~2}
 \end{subfigure}
-\caption{The $\beta$-beating for the first measurement in 2021 compared to the measurement in 2016 (during MD) showing a significantly larger $\beta$-beating in 2021, specially in the Beam~2 vertical plane.}
+\caption{The $\beta$-beating for the first measurement in 2021 compared to the measurement in 2016 (during MD) shows a significantly larger $\beta$-beating in 2021, especially in the Beam~2 vertical plane.}
 \label{fig:initalVs2016}
 \end{figure}
 %beta_beat_before_after_pre_beam1.pdf
 
-To identify the source of this discrepancy it was first decided to perform a magnetic cycle of the machine since the machine had been at injection energy for about 40~hours. Figure~\ref{fig:before_after_pre_cycle} compares the $\beta$-beating after 40 hours at injection and right after a magnetic ecycle, showing a small difference of only few percent. This is a positive result since it allows to have long fills at injection. 
+To identify the source of this discrepancy it was first decided to perform a magnetic cycle of the machine since the machine had been at injection energy for about 40 hours. Figure~\ref{fig:before_after_pre_cycle} compares the $\beta$-beating after 40~hours at injection and right after a magnetic cycle, showing a small difference of only a few percent. This is a positive result since it allows to have long fills at injection. 
 
 \begin{figure}[ht]
 \begin{subfigure}{.5\textwidth}
@@ -105,8 +104,7 @@ To identify the source of this discrepancy it was first decided to perform a mag
 \label{fig:before_after_pre_cycle}
 \end{figure}
 
-
-After ruling out that the big change in $\beta$-beating was coming coming from the extended time spent at injection we attempted to find the location of the error. Using the Segment-by-Segment (SbS)~\cite{first} technique it was found that there was a large phase deviation around IP3 and in particular at RQTL7.R3.B2. An optics correction using only this magnet was computed. The first observation was that nothing changed at all, not even the tunes, in Beam~2. However, the tune was changing for Beam 1. Therefore the RQTL7.R3.B1 and RQTL7.R3.B2 power converters were swapped. This was then traced to an old swap already detected in Run~1. This was fixed at that time but then during the LS2 it was again re-introduced as this magnet was replaced~\cite{first, michiEvian}. This swap was corrected on the software side and a new measurement was carried out showing a significantly reduced $\beta$-beating, see~Fig.~\ref{fig:before_after_swap}.
+After ruling out that the big change in $\beta$-beating was coming from the extended time spent at injection we attempted to find the location of the error. Using the Segment-by-Segment (SbS)~\cite{first} technique it was found that there was a large phase deviation around IP3 and in particular at RQTL7.R3.B2. An optics correction using only this magnet was computed. The first observation was that nothing changed at all, not even the tunes, in Beam~2. However, the tune was changing for Beam 1. Therefore the RQTL7.R3.B1 and RQTL7.R3.B2 power converters were swapped. This was then traced to an old swap already detected in Run~1. This was fixed at that time but then during the LS2 it was again re-introduced as this magnet was replaced~\cite{first, michiEvian}. This swap was corrected on the software side and a new measurement was carried out showing a significantly reduced $\beta$-beating, see~Fig.~\ref{fig:before_after_swap}.
 
 \begin{figure}[ht]
 \begin{subfigure}{.5\textwidth}
@@ -144,7 +142,7 @@ Figure~\ref{fig:after_swap_vs_2016} shows a comparison of the $\beta$-beating be
 \label{fig:after_swap_vs_2016}
 \end{figure}
 
-Based on the measurement after the correction of the swapped quadrupole, a global correction of the phase advance as well as the normalized horizontal dispersion was calculated. The impact on the $\beta$-beating is shown in Fig.~\ref{fig:before_after_correction_beta_beat} and the effect on the normalized dispersion is shown in Fig.~\ref{fig:before_after_correction_ndisp}. This was done without crossing angles and separtion bumps. 
+Based on the measurement after the correction of the swapped quadrupole, a global correction of the phase advance as well as the normalized horizontal dispersion was calculated. The impact on the $\beta$-beating is shown in Fig.~\ref{fig:before_after_correction_beta_beat} and the effect on the normalized dispersion is shown in Fig.~\ref{fig:before_after_correction_ndisp}. This was done without crossing angles and separation bumps. 
 
 \begin{figure}[ht]
 \begin{subfigure}{.5\textwidth}
@@ -180,7 +178,6 @@ Based on the measurement after the correction of the swapped quadrupole, a globa
 \label{fig:before_after_correction_ndisp}
 \end{figure}
 
-
 Figure~\ref{fig:2017_beta_beat_vs_2021} shows a comparison of the $\beta$-beating in Run~2 cand Run~3 after global corrections. We can see that the level of corrections is similar for the two runs with a slight improvement for Beam~1 in Run~3. 
 
 \begin{figure}[ht]
@@ -196,7 +193,7 @@ Figure~\ref{fig:2017_beta_beat_vs_2021} shows a comparison of the $\beta$-beatin
   \includegraphics[width=.99\linewidth]{plots/beam2/after_corr_2017_vs_2021_beam2.pdf}  
   \caption{Beam~2}
 \end{subfigure}
-\caption{The $\beta$-beating measured after correction during the beam-test compared to what was measured at injection in 20107.}
+\caption{The $\beta$-beating measured after correction during the beam-test compared to what was measured at injection in 2017.}
 \label{fig:2017_beta_beat_vs_2021}
 \end{figure}
 
@@ -218,24 +215,25 @@ The total phase deviation compared to the model measured in 2016, during the ATS
 \label{fig:2017_total_phase_vs_2021}
 \end{figure}
 
-In Fig.~\ref{fig:corrector_strength_injection} the change in powering of the magnets to archive the corrections is shown. The maximum strength between the corrections used in Run~2 and Run~3 is very similar but fewer magnets were used for the Run~3 correction, in particular for Beam~1. This is due to slightly different settings being used to calculate the corrections.  
-
+The vertical dispersion for the virgin machine using the ATS optics measure in 2016 compared to the virgin vertical dispersion is shown in~Fig.\ref{fig:2016_disp_vs_2021_vertical}. 
 \begin{figure}[ht]
 \begin{subfigure}{.5\textwidth}
   \centering
   % include first image
-  \includegraphics[width=.99\linewidth]{plots/beam1/}  
+  \includegraphics[width=.99\linewidth]{plots/beam1/vertical_disp_virgin_beam1.pdf.pdf} 
   \caption{Beam~1}
 \end{subfigure}
 \begin{subfigure}{.5\textwidth}
   \centering
   % include second image
-  \includegraphics[width=.99\linewidth]{plots/beam2/total_phase_after_corr_2017_vs_2021_beam2.pdf}  
+  \includegraphics[width=.99\linewidth]{plots/beam2/vertical_disp_virgin_beam2.pdf.pdf} 
   \caption{Beam~2}
 \end{subfigure}
-\caption{The deviation in phase advance}
-\label{fig:2016_disp_vs_2021}
+\caption{The vertical dispersion measured in 2016 and 2021 for the virgin machine without any corrections. The blue colour shows the measurement in 2017 and the run from 2021. }
+\label{fig:2016_disp_vs_2021_vertical}
 \end{figure}
+
+In Fig.~\ref{fig:corrector_strength_injection} the change in powering of the magnets to archive the corrections is shown. The maximum strength between the corrections used in Run~2 and Run~3 is very similar but fewer magnets were used for the Run~3 correction, in particular for Beam~1. This is due to slightly different settings being used to calculate the corrections.  
 
 
 \begin{figure}[ht]
@@ -254,7 +252,6 @@ In Fig.~\ref{fig:corrector_strength_injection} the change in powering of the mag
 \caption{The correction strengths used in Run~2 and Run~3.}
 \label{fig:corrector_strength_injection}
 \end{figure}
-
 
 
 \subsection{Measurements in 2022 and reproducibility}\label{sec:repro}
@@ -294,7 +291,7 @@ at injection, additional measurements were taken in parallel to other activities
 \label{fig:energy_offset_injection}
 \end{figure}
 
-The variation is within the tolerance where it is not an issue for machine protection. 
+The variation of $\beta$-beat observed is, however, within the tolerance where and it is therefore not an issue for machine protection or in general for the operation of the machine. 
 
 
 \begin{comment}
@@ -377,7 +374,7 @@ The times below are local times.
 \end{comment}
 
 \section{MCS feed-down}
-It has been observed that changing the strength of the MCSs ($b_3$ spool pieces) has an impact on the transverse coupling in the LHC~\cite{counter_acting_coupling_decay}. The main hypothesis is that this is coming from a vertical misalignment of the MCS with respect to the $b_3$ in the main dipoles or from a systematic orbit effect. In order to validate if the effect had remained constraint after LS2 a new measurement was carried out during the beam-test. The test consists of adjusting the setting of the MCS in a single arc and measuring the impact on the transverse coupling. The result for Beam~1 is shown in Fig.~\ref{fig:beam1_mcs} and for Beam~2 in  Fig.~\ref{fig:beam2_mcs}. Beam~1 has fewer measurements since the MD in 2018 was only for Beam~2. We observe that both the amplitude and the sign seem to have stayed constant between Run~2 and Run~3. This is an important observation since this indicates that the coupling feed-down caused by this could be mitigated as proposed in \cite{counter_acting_coupling_decay}. In fact, the proposal to compensate for the dynamic part of the $b_3$-decay was implemented in 2022 showing promising results but a final analysis of the impact of this will be reported in a future report.
+It has been observed that changing the strength of the MCSs ($b_3$ spool pieces) has an impact on the transverse coupling in the LHC~\cite{counter_acting_coupling_decay}. The main hypothesis is that this is coming from a vertical misalignment of the MCS with respect to the $b_3$ in the main dipoles or from a systematic orbit effect. In order to validate if the effect had remained constraint after LS2 a new measurement was carried out during the beam-test. The test consists of adjusting the setting of the MCS in a single arc and measuring the impact on the transverse coupling. The result for Beam~1 is shown in Fig.~\ref{fig:beam1_mcs} and for Beam~2 in  Fig.~\ref{fig:beam2_mcs}. Beam~1 has fewer measurements since the MD in 2018 was only for Beam~2. We observe that both the amplitude and the sign seem to have stayed constant between Run~2 and Run~3. This is an important observation since this indicates that the coupling feed-down caused by this could be mitigated as proposed in~\cite{counter_acting_coupling_decay}. In fact, the proposal to compensate for the dynamic part of the $b_3$-decay was implemented in 2022 showing promising results but a final analysis of the impact of this will be reported in a future report.
 %Add reference here
 
 \begin{figure}[ht]
@@ -393,7 +390,7 @@ It has been observed that changing the strength of the MCSs ($b_3$ spool pieces)
   \includegraphics[width=.8\linewidth]{plots/MCS/b_1change_im_per_b3.pdf}  
   \caption{Imaginary part of the $C^-$.}
 \end{subfigure}
-\caption{The impact on the $C^-$ from changing the MCS corrector ($b_3$-spool pieces) for Beam~1. }
+\caption{The impact on the $C^-$ from changing the MCS corrector ($b_3$-spool pieces)  arc-by-arc for for Beam~1. }
 \label{fig:beam1_mcs}
 \end{figure}
 
@@ -410,13 +407,13 @@ It has been observed that changing the strength of the MCSs ($b_3$ spool pieces)
   \includegraphics[width=.8\linewidth]{plots/MCS/b_2change_im_per_b3.pdf}  
   \caption{Imaginary part of the $C^-$.}
 \end{subfigure}
-\caption{The impact on the $C^-$ from changing the MCS corrector ($b_3$-spool pieces) for Beam~1.}
+\caption{The impact on the $C^-$ from changing the MCS corrector ($b_3$-spool pieces) arc-by-arc for Beam~2.}
 \label{fig:beam2_mcs}
 \end{figure}
 
 
 \section{Summary and Outlook}
-The optics corrections during the beam test were successful in terms of demonstrating the readiness of the optics corrections tools as well as finding the swap of the magnets RQTL7.R3.B1 $\leftrightarrow$ RQTL7.R3.B2. Furthermore, it was very useful in testing the tools and software packages to be ready for Run~3. The optics corrections also remained the same for the 2023 Run. A degradation of the optics quality was observed for Beam~2 but not for Beam~1. Through simulations, it has been excluded to derive from energy variations at injection. Instead, it is more likely that it derives from hysteresis or/and decays at injection. It would be interesting to measure the optics at different intervals over a longer time period. This could potentially be combined with a scrubbing run where one could apply kicks between the fills for scrubbing. Additionally, it would be interesting to understand if there is a difference between a pre-cycle and a ramp-down. 
+The optics corrections during the beam test were successful in terms of demonstrating the readiness of the optics corrections tools as well as finding the swap of the magnets RQTL7.R3.B1 $\leftrightarrow$ RQTL7.R3.B2. Furthermore, it was very useful in testing the tools and software packages to be ready for Run~3. A small degradation of the quality of the optics was observed for Beam~2 between 2021 and 2022 but not for Beam~1. Through simulations, it has been excluded to derive from energy variations at injection. Instead, it is more likely that it derives from hysteresis or/and decays at injection. The reason why it appears to have a larger effect in Beam~2 remains unclear. It would be interesting to measure the optics at different intervals over a longer time period. This could potentially be combined with a scrubbing run where one could apply kicks between the fills for scrubbing. Additionally, it would be interesting to understand if there is a difference between a pre-cycle and a ramp-down. 
 
 \begin{thebibliography}{99}   % Use for  1-9  reference
 
